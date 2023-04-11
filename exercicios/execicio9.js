@@ -7,11 +7,25 @@ arredondamento pois esta nota resulta na reprovação do aluno. Por exemplo, a n
 seja, que evite a reprovação do aluno. No caso de a nota ser 38, o arredondamento é possível pois atingirá 40
 e o aluno será aprovado.*/
 
+function arredondar(nota) {
+    if (nota % 5 >= 3) { // o  resto da divisão do 84 é 4, como 4 é maior que 2 
+        return nota + (5 - (nota % 5)) // (84 + (5 - (4)) = 85
+    } else {
+        return nota 
+    }
+
+}
 
 function sistemaNotas(nota) {
-    if (nota < 40) {
-        console.log("Reprovado")        
+    let notaCerta = arredondar(nota)
+    if (nota > 40) {
+        console.log(`Aprovado com a nota ${notaCerta}`);
+    } else {
+        console.log(`Reprovado com a nota ${notaCerta}`);
     }
 }
 
-sistemaNotas(50)
+sistemaNotas(38)
+sistemaNotas(84)
+sistemaNotas(27)
+sistemaNotas(29)
