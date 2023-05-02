@@ -47,7 +47,4 @@ console.log(valida_cnpj(cnpj));
 
 // split ele divide o array, nesse caso até o -, começando pelo elemento 0
 // replace(/[.]/g); ele vai remover os ponto e os traços, e vai substituir por vazio
-// pipe | == alt + 124
-// contra barra \ == alt + 92
-// ponto de interrogação ? == (ctrl) + (alt) + (W)
 
