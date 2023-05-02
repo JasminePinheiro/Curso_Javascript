@@ -1,3 +1,5 @@
+/* Não é  muito utilizado*/
+
 // tagged Template => processar a template string dentro de um função
 function tag(partes, ...valores) {
     console.log(partes)
