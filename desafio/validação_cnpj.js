@@ -1,6 +1,6 @@
 // Cadastro Nacional de Pessoa Jurídica
 
-var cnpj = "49.767.535/0001-81";
+var cnpj = "22.247.559/0001-53";
 function valida_cnpj(cnpj) {
     let numeros = cnpj.split("-")[0].replace(/[.|\/]/g, "");
     //console.log(numeros);
