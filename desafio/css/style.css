@@ -1,0 +1,162 @@
+/* Geral */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(41, 41, 41);
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+button {
+    background-color: aliceblue;
+    color: rgb(214, 67, 165);
+    border: .5px solid rgb(214, 67, 165);
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(214, 67, 165);
+    color: white;
+
+}
+
+button:hover>i {
+    color: white;
+}
+
+button i {
+    color: rgb(214, 67, 165);
+    font-weight: bold;
+    pointer-events: none;
+    /*desabilitae os eventos dos icones*/
+}
+
+input,
+select {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* Todo header */
+.todo-container {
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+/* Todo form */
+#todo-form,
+#edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+#todo-form p,
+#edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 0.3rem;
+}
+
+/* Todo toolbar */
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid rgb(214, 214, 214);;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid white;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#search form {
+    display: flex;
+
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 30%;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Todo List */
+.todo {
+    display: flex;
+    justify-content:space-around; /* os icones vão ficar do ladinho */
+    align-items: center; /*os icones vão ficar menores*/
+    padding: 1rem;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    transition: 0.3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done{
+    background-color: rgb(162, 66, 240);
+
+}
+
+.done h3{
+    color: rgb(255, 255, 255);
+    text-decoration: line-through;
+    font-style: italic;
+}

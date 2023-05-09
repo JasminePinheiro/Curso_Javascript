@@ -20,3 +20,19 @@ function estoqueFrutas(fruta) {
 console.log(estoqueFrutas('maçã'))
 console.log(estoqueFrutas('kiwi'))
 console.log(estoqueFrutas('melancia'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+const imc = (peso) 
+const peso = 
+altura = 
