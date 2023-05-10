@@ -1,12 +1,15 @@
 function validaCNPJ(cnpj) {
   // remove caracteres especiais do CNPJ
   cnpj = cnpj.replace(/[^\d]+/g, '');
-
+ 
   // Verifica se o CNPJ possui 14 caracteres
   if (cnpj.length !== 14) {
     return false;
   }
 
+
+
+/[^ ]+$/
   // Verifica se todos os caracteres são iguais
   if (/^(\d)\1+$/.test(cnpj)) {
     return false;
@@ -14,7 +17,7 @@ function validaCNPJ(cnpj) {
 
   // Verifica se os dois dígitos verificadores são válidos
   var tamanho = cnpj.length - 2;
-  var numeros = cnpj.substring(0, tamanho);
+  var numeros = cnpj.substring(0, tamanho); //método extrai caracteres, entre dois índices (posições), de uma string e retorna a substring
   var digitos = cnpj.substring(tamanho);
   var soma = 0;
   var pos = tamanho - 7;
@@ -49,8 +52,10 @@ function validaCNPJ(cnpj) {
 }
 
 
-if (validaCNPJ("22.247.559/0001-53")) {
+if (validaCNPJ("54.545.086/0001-67")) {
   console.log("CNPJ valido");
 } else {
   console.log("CNPJ invalido");
 }
+
+valor = valor.replace(/[^\d]+/g,'')
