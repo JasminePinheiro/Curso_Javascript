@@ -5,7 +5,8 @@ const todoList = document.getElementById("todo-list")
 const editForm = document.getElementById("edit-form")
 const editInput = document.getElementById("edit-input")
 const cancelEditBtn = document.getElementById("cancel-edit-btn")
-const searchInput = document.getElementById("search-input")
+const searchInput
+ = document.getElementById("search-input")
 const eraseBtn = document.getElementById("erase-button")
 const filterBtn = document.getElementById("filter")
 
