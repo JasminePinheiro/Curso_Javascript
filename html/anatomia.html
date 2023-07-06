@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisao-html</title>
+</head>
+
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <nav>
+       <a href="teste.html">Teste</a>
+       <a href="teste2.html">Teste2</a>
+
+    </nav>
+    <section id="conteudo">
+    </section>
+    <aside>
+        <p>Lateral</p>
+    </aside>
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+            
+            link.onclick = function(e) {
+                e.preventDefault() // vai previnir o comportamento padrão
+                
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+
+</body>
+</html>

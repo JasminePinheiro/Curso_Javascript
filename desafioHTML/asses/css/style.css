@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&family=Roboto:wght@400;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(238, 114, 211, 0.911);    
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 225, 250);
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+
+}
+
+.form {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding:  3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.login-button button {
+    border: none;
+    background-color: rgba(230, 15, 158, 0.685);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: rgb(224, 25, 141);
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(224, 25, 141);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+}
+
+.input-box input { 
+    margin: 0.4rem 0;
+    padding: 0.3rem 0.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+}
+
+.input-box input:hover {
+    background-color: rgba(243, 238, 238, 0.979);
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid rgb(224, 25, 141);
+}
+
+.input-box label.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: black;
+}
+
+.input-box input::placeholder {
+    color: black;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input {
+    margin-right: 0.35rem;
+    font-weight: 600;
+    color: black;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: rgba(230, 15, 158, 0.685);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: rgb(228, 4, 135);
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 0.93rem;
+    color:white;
+}
